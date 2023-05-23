@@ -197,6 +197,7 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
         paths.add(path);
         updaters.add(updater);
       }
+
       success = extBaseAccessor.updateChildren(paths, updaters, AccessOption.PERSISTENT);
 
       for (int i = 0; i < 10; i++) {
