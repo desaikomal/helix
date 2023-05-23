@@ -177,9 +177,8 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
     for (int i = 0; i < 20; i++) {
       // TestHelper.printCache(accessor._zkCache);
       ret = TestHelper.verifyZkCache(zkCacheInitPaths, accessor._zkCache._cache, _gZkClient, true);
-      if (ret) {
+      if (ret) 
         break;
-      }
       Thread.sleep(100);
     }
 
