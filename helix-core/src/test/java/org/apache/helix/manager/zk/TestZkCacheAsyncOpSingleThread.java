@@ -181,6 +181,7 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
         break;
       Thread.sleep(100);
     }
+
     Assert.assertTrue(ret, "zkCache doesn't match data on Zk");
 
     // update each current state 10 times by external base accessor
