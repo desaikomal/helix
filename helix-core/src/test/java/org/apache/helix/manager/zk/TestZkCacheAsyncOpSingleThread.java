@@ -171,7 +171,6 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
     for (int i = 0; i < 10; i++) {
       Assert.assertTrue(success[i], "Should succeed in create: " + paths.get(i));
     }
-
     // wait zkEventThread update zkCache
     // verify wtCache
     for (int i = 0; i < 20; i++) {
