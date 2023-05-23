@@ -183,7 +183,6 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
     }
 
     Assert.assertTrue(ret, "zkCache doesn't match data on Zk");
-
     // update each current state 10 times by external base accessor
     List<DataUpdater<ZNRecord>> updaters = new ArrayList<>();
     for (int j = 0; j < 10; j++) {
