@@ -162,7 +162,6 @@ public class TestZkCacheAsyncOpSingleThread extends ZkUnitTestBase {
       String path = PropertyPathBuilder.instanceCurrentState(clusterName, "localhost_8901",
           "session_0", "TestDB" + i);
       ZNRecord record = new ZNRecord("TestDB" + i);
-
       paths.add(path);
       records.add(record);
     }
