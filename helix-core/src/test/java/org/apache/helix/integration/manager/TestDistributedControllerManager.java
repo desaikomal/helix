@@ -74,6 +74,7 @@ public class TestDistributedControllerManager extends ZkTestBase {
     }
     BestPossibleExternalViewVerifier verifier = new BestPossibleExternalViewVerifier
         .Builder(clusterName).setZkAddress(ZK_ADDR).build();
+
     boolean result = verifier.verifyByZkCallback();
     Assert.assertTrue(result);
 
