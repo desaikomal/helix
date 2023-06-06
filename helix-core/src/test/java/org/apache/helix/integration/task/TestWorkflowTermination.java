@@ -156,6 +156,7 @@ public class TestWorkflowTermination extends TaskTestBase {
     // to trigger a job stopped
     Thread.sleep(100);
 
+
     // Pause the queue
     _driver.waitToStop(workflowName, 20000L);
 
